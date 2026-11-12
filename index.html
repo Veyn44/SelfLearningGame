@@ -5,13 +5,27 @@
     <title>CASSANDRA</title>
     <style>
         body {
+            margin: 0;
+            overflow: hidden;
             background-color: #1e1e1e;
             color: white;
+            font-family: sans-serif;
         }
         
         canvas {
-            border: 2px solid white;
+            display: block;
             image-rendering: pixelated;
+        }
+        #top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            background-color: rgba(0,0,0,06);
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </head>
