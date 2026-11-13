@@ -5,8 +5,8 @@ export const camera = {
 };
 
 export function centerCamera(viewWidth, viewHeight, worldWidth, worldHeight) {
-    camera.x = (worldWidth - viewWidth) / 2;
-    camera.y = (worldHeight - viewHeight) / 2;
+    camera.x = Math.round((worldWidth - viewWidth) / 2);
+    camera.y = Math.round((worldHeight - viewHeight) / 2);
 }
 
 export function updateCamera(keys) {
