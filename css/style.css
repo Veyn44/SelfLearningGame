@@ -1,23 +1,38 @@
 body {
-            margin: 0;
-            overflow: hidden;
-            background-color: #1e1e1e;
-            color: white;
-            font-family: sans-serif;
-        }
-        
-        canvas {
-            display: block;
-            image-rendering: pixelated;
-        }
-        #top-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            box-sizing: border-box;
-            padding: 10px 20px;
-            background-color: rgba(0, 0, 0, 0.6);
-            display: flex;
-            justify-content: space-between;
-        }
+    margin: 0;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    color: white;
+    font-family: sans-serif;
+}
+
+canvas {
+    display: block;
+    image-rendering: pixelated;
+}
+
+#top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#game-title {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #00f5d4;
+    text-shadow: 0 0 10px rgba(0, 245, 212, 0.8);
+    padding: 4px 14px;
+    border: 2px solid #b81d3a;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #ff1e42, inset 0 0 8px rgba(255, 30, 66, 0.5);
+}
