@@ -26,6 +26,27 @@ canvas {
     color: var(--ui-textSecondary);
 }
 
+#top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#toggle-grid {
+    background-color: var(--ui-background);
+    color: var(--ui-accent);
+    border: 1px solid var(--ui-border);
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#toggle-grid:hover {
+    border-color: var(--ui-accent);
+}
+
 #game-title {
     font-family: 'Consolas', 'Courier New', monospace;
     font-size: 22px;
