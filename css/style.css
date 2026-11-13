@@ -1,8 +1,8 @@
 body {
     margin: 0;
     overflow: hidden;
-    background-color: #1e1e1e;
-    color: white;
+    background-color: var(--ui-background);
+    color: var(--ui-textPrimary);
     font-family: sans-serif;
 }
 
@@ -18,10 +18,12 @@ canvas {
     width: 100%;
     box-sizing: border-box;
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: var(--ui-panel);
+    border-bottom: 1px solid var(--ui-border);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--ui-textSecondary);
 }
 
 #game-title {
@@ -29,10 +31,10 @@ canvas {
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 3px;
-    color: #00f5d4;
-    text-shadow: 0 0 10px rgba(0, 245, 212, 0.8);
+    color: var(--ui-accent);
+    text-shadow: 0 0 10px var(--ui-accent);
     padding: 4px 14px;
-    border: 2px solid #b81d3a;
+    border: 2px solid var(--ui-frame);
     border-radius: 12px;
-    box-shadow: 0 0 12px #ff1e42, inset 0 0 8px rgba(255, 30, 66, 0.5);
+    box-shadow: 0 0 12px var(--ui-frameGlow), inset 0 0 6px var(--ui-frameGlow);
 }
