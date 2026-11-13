@@ -3,31 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CASSANDRA</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            background-color: #1e1e1e;
-            color: white;
-            font-family: sans-serif;
-        }
-        
-        canvas {
-            display: block;
-            image-rendering: pixelated;
-        }
-        #top-bar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            box-sizing: border-box;
-            padding: 10px 20px;
-            background-color: rgba(0,0,0,06);
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="top-bar">
@@ -35,12 +11,6 @@
         <span>v0.1</span>
     </div>
     <canvas id="game"></canvas>
-    <script>
-        const canvas= document.getElementById("game");
-        const ctx= canvas.getContext("2d");
-        
-        ctx.fillStyle = "#4caf50";
-        ctx.fillRect(0,0,48,48);
-    </script>
+    <script type="module" src="src/main.js"></script>
 </body>
 </html>
